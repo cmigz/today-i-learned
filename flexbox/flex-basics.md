@@ -43,4 +43,98 @@ FlexBox is super simple to pick up, but takes some time to master.  If you alrea
   ```
   ![alt text](https://i.imgur.com/NtlTQyC.png "display: inline-flex;")
 
-  These display propertetiers created flex containers which create a "flex formatting context" for it's content.  Similar to making a block formatting context but the flex layout is the replacement with it's built in ability to adjust automatically. 
+  These display properties created flex containers which create a "flex formatting context" for its content.  Similar to making a block formatting context but the flex layout is the replacement with its built-in ability to adjust automatically.
+
+## Manipulating Contents of Flexbox Container
+
+Once we have a parent container with a display of flex there is a myriad of options we have for aligning, ordering, and structuring our content within.  They fall into three broad categories with their own sub categories.  I will include far more detailed sources for each of the sub categories. For the time being this repo will just include the basics to get you started using flexbox, you will be TODO Add link to reources / reword sentence
+
+1. Order & Orientation
+    * flex-direction
+    * flex-wrap
+    * flex-flow
+    * order
+2. Alignment
+    * justify-content
+    * align-items
+    * align-self
+    * align-content
+3. Flexibility
+    * flex-grow
+    * flex-shrink
+    * flex-basis
+
+## Order & Orientation
+
+### Flex-Direction
+
+Flex-direction as the name suggests defines the alignment of the children of a flex container with four options.
+
+#### Row
+
+Will align children elements if the parent container in a row.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+```
+![alt text](https://i.imgur.com/RJD0vq0.png "flex-direction: row;")
+
+#### Row-Reverse
+
+Functions the same as row with the exception of ordering the child elements in reverse.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+}
+```
+![alt text](https://i.imgur.com/EQQzS4d.png "flex-direction: row-reverse;")
+
+#### Column
+
+Will align children elements if the parent container in a column.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+```
+![alt text](https://i.imgur.com/8mUkA4R.png "flex-direction: column;")
+
+#### Column-Reverse
+
+Functions the same as column with the exception of ordering the child elements in reverse.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: column-reverse;
+}
+```
+![alt text](https://i.imgur.com/MwDhG1m.png "flex-direction: column-reverse;")
+
+## Alignment
+
+### Justify Content
+
+This propertly allows for the alignment of children with the primary axis of the flex container.  So if we have a parent container with row we will be justifying content along the X-Axis while if it were a column we'd be justifyig it along the Y-Axis.
+
+For the purpose of the following examples the flex-direction will be a row, but bear in mind the structuing applies the same for columns.
+
+#### Flex-Start
+
+Will justify the content among the beggining of the flex axis, so being a row we will "float the contents" to the start or left of the axis.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+```
+![alt text](https://i.imgur.com/MwDhG1m.png "justify-content: flex-start;")
