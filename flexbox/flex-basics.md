@@ -138,3 +138,55 @@ Will justify the content among the beggining of the flex axis, so being a row we
 }
 ```
 ![alt text](https://i.imgur.com/MwDhG1m.png "justify-content: flex-start;")
+
+#### Flex-End
+
+I'm sure your noticing some patterns by now.  Much like flex-start, flex-end will float the children elements to the end of the axis.  Since the flex-direction is row that that puts our little red buddies all the way to the right.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+```
+![alt text](https://i.imgur.com/lJX7RpO.png "justify-content: flex-end;")
+
+#### Center
+
+Justify-Content: center; much like the rest of flexbox attribute values works exactly as it sounds.  It will center the contents of the container within the center of it's flex-direction's axis.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+```
+![alt text](https://i.imgur.com/4039Flq.png "justify-content: center;")
+
+#### Space Between
+
+Space between will adjust the content evenly between each child elements. Bear in mind if the parent container has padding it won't be set to the edge like in the example below.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+```
+![alt text](https://i.imgur.com/c6XdOql.png "justify-content: space-between;")
+
+#### Space Around
+
+Space around will adjust the content of the children elements automatically based on the space around them (not just between). Again the padding of the container and margin of the children will effect the final result of space-around.
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+```
+![alt text](https://i.imgur.com/Gzc2uEn.png "justify-content: space-around;")
