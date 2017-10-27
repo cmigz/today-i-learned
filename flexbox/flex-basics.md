@@ -50,8 +50,11 @@ FlexBox is super simple to pick up, but takes some time to master.  If you alrea
 Once we have a parent container with a display of flex there is a myriad of options we have for aligning, ordering, and structuring our content within.  They fall into three broad categories with their own sub categories.  I will include far more detailed sources for each of the sub categories. For the time being this repo will just include the basics to get you started using flexbox, you will be TODO Add link to reources / reword sentence
 
 1. Order & Orientation
-    * flex-direction
-    * flex-wrap
+    * flex-direction: row || row-reverse || column || column-reverse
+      * Defines which axis the container's children will be aligned along.
+        * Default: row
+    * flex-wrap: wrap || no-wrap || wrap-reverse
+      * Decides whether the container is single or multi line and the direction of it's cross-axis thereby defining the direction new lines are placed 
     * flex-flow
     * order
 2. Alignment
@@ -63,6 +66,8 @@ Once we have a parent container with a display of flex there is a myriad of opti
     * flex-grow
     * flex-shrink
     * flex-basis
+
+There are a myriad of different options we have when utilizing Flexbox's attributes
 
 ## Order & Orientation
 
