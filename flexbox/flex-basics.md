@@ -61,47 +61,47 @@ FlexBox is super simple to pick up but takes some time to master.  If you alread
   ```
   ![](https://i.imgur.com/4VXBCwr.gif)
 
-  These display properties create flex containers which make a "flex formatting context" for its content.  Similar to making a block formatting context but the flex layout is the replacement with flexbox's built-in ability to adjust automatically.
+  These display properties create flex containers which make a "flex formatting context" for its content.  It's similar to making a block formatting context, but here we use flex layout for that built-in ability to adjust automatically.
 
 ## Manipulating Contents of Flexbox Container
 
 Once we have a parent container with a display of flex there is a myriad of options we have for aligning, ordering, and structuring our content within.  They fall into three broad categories with their own subcategories. For the time being this repo will just include the basics to get you started using flexbox, you can dig into the [Sources and External Resources](#sources-and-external-resources) for additional and more detailed teachings.
 
 1. Order & Orientation
-    * **flex-direction:** row || row-reverse || column || column-reverse;
-      * _Default:_ row
+    * **flex-direction:** `row` || `row-reverse` || `column` || `column-reverse`;
+      * _Default:_ `row`
       * Defines which axis the container's children will be aligned along.
-    * **flex-wrap:** wrap || no-wrap || wrap-reverse;
-      * _Default:_ nowrap
+    * **flex-wrap:** `wrap` || `no-wrap` || `wrap-reverse`;
+      * _Default:_ `nowrap`
       * Decides whether the container is a single or multi-line and the direction of its cross-axis thereby defining the direction new lines are placed.
-    * **flex-flow:** row nowrap || column-reverse || column wrap || row-reverse wrap-reverse;
-      * _Default:_ row nowrap
-      * Since flex-direction and flex-wrap are often used in tandem we have the flex-flow property to use as a shortcut for setting the two in one property.
-    * **order:** -1 || 0 || 1;
-      * _Default:_ 0
-      * The order property allows us to define the sequence in which children within a container will appear.  The property takes a single integer value which organizes the content starting with the lowest defined order and continues up from there.
+    * **flex-flow:** `row nowrap` || `column-reverse` || `column wrap` || `row-reverse` `wrap-reverse`;
+      * _Default:_ `row nowrap`
+      * Since `flex-direction` and `flex-wrap` are often used in tandem we have the `flex-flow` property to use as a shortcut for setting the two in one property.
+    * **order:** `-1` || `0` || `1`;
+      * _Default:_ `0`
+      * The `order` property allows us to define the sequence in which children within a container will appear.  The property takes a single integer value which organizes the content starting with the lowest defined order and continues up from there.
 2. Alignment
-    * **justify-content:** flex-start || flex-end || center || space-between || space-around;
-      * _Default:_ flex-start
+    * **justify-content:** `flex-start` || `flex-end` || `center` || `space-between` || `space-around`;
+      * _Default:_ `flex-start`
       * This property will define the alignment of children items along the primary axis of the parent.
-    * **align-items:** flex-start || flex-end || center || baseline || stretch;
-      * _Default:_ stretch
-      * Similar to justify-content with the exception it defines the alignment of items on the secondary axis.
-    * **align-self:** flex-start || flex-end || center || baseline || stretch;
-      * _Default:_ auto
-      * As align items will organize all children elements align-self can be used to apply to only certain children.
-    * **align-content:** flex-start || flex-end || center || space-between || space-around || stretch;
-      * _Default:_ stretch
-      * Similar to the workings of justify-content, align-content will organize a containers lines within where there is a surplus of space in the cross axis.
+    * **align-items:** `flex-start` || `flex-end` || `center` || `baseline` || `stretch`;
+      * _Default:_ `stretch`
+      * Similar to `justify-content` with the exception it defines the alignment of items on the secondary axis.
+    * **align-self:** `flex-start` || `flex-end` || `center` || `baseline` || `stretch`;
+      * _Default:_ `auto`
+      * As `align-items` will organize all children elements `align-self` can be used to apply to only certain children.
+    * **align-content:** `flex-start` || `flex-end` || `center` || `space-between` || `space-around` || `stretch`;
+      * _Default:_ `stretch`
+      * Similar to the workings of `justify-content`, `align-content` will organize a containers lines within where there is a surplus of space in the cross axis.
 3. Flexibility
-    * **flex-grow:** 0 || 1;
-      * _Default:_ 0
+    * **flex-grow:** `0` || `1`;
+      * _Default:_ `0`
       * Defines a "flex grow factor" given the integer passed to property and is used to scale children elements with more control.
-    * **flex-shrink:** 0 || 1;
-      * _Default:_ 1
+    * **flex-shrink:** `0` || `1`;
+      * _Default:_ `1`
       * Defines a "flex shrink factor" given the integer passed to property and is used to scale children elements with more control.
-    * **flex-basis:** 30% || 50% || content;
-      * _Default:_ auto
+    * **flex-basis:** `30%` || `50%` || `content`;
+      * _Default:_ `auto`
       * Another means of specifically targeting specific child elements this property uses the same values of width and height in addition to content.
 
 There is a myriad of different options we have when utilizing Flexbox's properties, but there are two that take up a majority of what you will likely be using with flexbox.  For the time being, we will go into examples and more detail on Flex-Direction and Justify-Content. At the end of this repository, you will find all my sources for learning flexbox and links to the content so you can learn more about the pieces this guide doesn't get into great detail of.
