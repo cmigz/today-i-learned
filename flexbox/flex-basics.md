@@ -1,7 +1,7 @@
 # Today I learned...
-### How Awesome CSS Flexbox is
-##### By: Christian Mignacca
-##### [@cmigz](https://github.com/cmigz)
+### CSS Flexbox Is Awesome
+##### By: Christian Mignacca | [@cmigz](https://github.com/cmigz)
+##### Thanks to [@laurpaik](https://github.com/laurpaik) for her contributions!
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -105,17 +105,17 @@ Once we have a parent container with a display of flex there is a myriad of opti
       * _Default:_ `auto`
       * Another means of specifically targeting specific child elements this property uses the same values of width and height in addition to content.
 
-There is a myriad of different options we have when utilizing Flexbox's properties, but there are two that take up a majority of what you will likely be using with flexbox.  For the time being, we will go into examples and more detail on Flex-Direction and Justify-Content. At the end of this repository, you will find all my sources for learning flexbox and links to the content so you can learn more about the pieces this guide doesn't get into great detail of.
+There is a myriad of different options we have when utilizing Flexbox's properties, but there are two that take up a majority of what you will likely be using with flexbox.  For the time being, we will go into examples and more detail on `flex-direction` and `justify-content`. At the end of this repository, you will find all my sources for learning flexbox and links to the content so you can learn more about the pieces this guide doesn't get into great detail of.
 
 ## Order & Orientation
 
 ### Flex-Direction
 
-Flex-direction, as the name suggests, defines the alignment of the children of a flex container with four options.
+`flex-direction`, as the name suggests, defines the alignment of the children of a flex container with four options.
 
 #### Row
 
-Will align children elements if the parent container in a row.
+Will align children elements if the parent container in a `row`.
 
 ```css
 .parent {
@@ -127,7 +127,7 @@ Will align children elements if the parent container in a row.
 
 #### Row-Reverse
 
-Functions the same as row with the exception of ordering the child elements in reverse.
+Functions the same as `row` with the exception of ordering the child elements in reverse.
 
 ```css
 .parent {
@@ -139,7 +139,7 @@ Functions the same as row with the exception of ordering the child elements in r
 
 #### Column
 
-Will align children elements if the parent container in a column.
+Will align children elements if the parent container in a `column`.
 
 ```css
 .parent {
@@ -151,7 +151,7 @@ Will align children elements if the parent container in a column.
 
 #### Column-Reverse
 
-Functions the same as column with the exception of ordering the child elements in reverse.
+Functions the same as `column` with the exception of ordering the child elements in reverse.
 
 ```css
 .parent {
@@ -165,9 +165,9 @@ Functions the same as column with the exception of ordering the child elements i
 
 ### Justify Content
 
-This property allows for the alignment of children along the primary axis of the flex container.  So if we have a parent container with row we will be justifying content along the X-Axis while if it were a column we'd be justifying it along the Y-Axis.
+This property allows for the alignment of children along the primary axis of the flex container.  So if we have a parent container with `flex-direction: row` we will be justifying content along the X-Axis while with `flex-direction: column` we'd be justifying it along the Y-Axis.
 
-For the purpose of the following examples, the flex-direction will be a row but bear in mind the structuring applies the same for columns.
+For the purpose of the following examples, the `flex-direction` will be a row but bear in mind the structuring applies the same for columns.
 
 #### Flex-Start
 
@@ -184,7 +184,7 @@ Will justify the content among the beginning of the flex axis, so being a row we
 
 #### Flex-End
 
-I'm sure you're noticing some patterns by now.  Much like flex-start, flex-end will float the children elements to the end of the axis.  Since the flex-direction is the row that puts our little red buddies all the way to the right.
+I'm sure you're noticing some patterns by now.  Much like `flex-start`, `flex-end` will float the children elements to the end of the axis.  Since the `flex-direction` is the row that puts our little red buddies all the way to the right.
 
 ```css
 .parent {
@@ -197,7 +197,7 @@ I'm sure you're noticing some patterns by now.  Much like flex-start, flex-end w
 
 #### Center
 
-Justify-Content: center; much like the rest of flexbox attribute values works exactly as it sounds.  It will center the contents of the container within the center of its flex-direction's axis.
+`justify-content: center;` much like the rest of flexbox attribute values works exactly as it sounds.  It will center the contents of the container within the center of its flex-direction's axis.
 
 ```css
 .parent {
@@ -210,7 +210,7 @@ Justify-Content: center; much like the rest of flexbox attribute values works ex
 
 #### Space Between
 
-Space between will adjust the content evenly between each child elements. Bear in mind if the parent container has padding it won't be set to the edge like in the example below.
+`space-between` will adjust the content evenly between each child elements. Bear in mind if the parent container has padding it won't be set to the edge like in the example below.
 
 ```css
 .parent {
@@ -223,7 +223,7 @@ Space between will adjust the content evenly between each child elements. Bear i
 
 #### Space Around
 
-Space around will adjust the content of the children elements automatically based on the space around them (not just between). Again the padding of the container and margin of the children will affect the final result of space-around.
+`space-around` will adjust the content of the children elements automatically based on the space around them (not just between). Again the padding of the container and margin of the children will affect the final result of space-around.
 
 ```css
 .parent {
@@ -238,9 +238,11 @@ Space around will adjust the content of the children elements automatically base
 
 A lot of this walkthrough has come from three sources I used to pick up and practice the basics of flex-box.  You will find much more in-depth information from these links and the chance to practice and play with all the different properties.  Please get in touch if you find any additional resources you think would make a good addition to this repository!
 
-- [CodeSchool: "Craking the Case with Flexbox"](https://www.codeschool.com/courses/cracking-the-case-with-flexbox)
-  - Comes with the silly songs that go along with all of code school's content.  All joking aside this is the most in-depth and best source I found for really getting into the details with flexbox but more importantly the chance to practice use the properties and see them in real time.
+- [CodeSchool: "Cracking the Case with Flexbox"](https://www.codeschool.com/courses/cracking-the-case-with-flexbox)
+  - Comes with the silly songs that go along with all of CodeSchool's. All jokes aside, this is the most in-depth source I found for getting into the details of Flexbox. It gives you a chance to practice using the properties and see the changes in real time.
 - [Flexbox Froggy](http://flexboxfroggy.com/)
   - A great little game/practice site.  It has 24 levels that teach/test use of each of flexbox's properties.  Really good for solidifying what you've learned.
 - [Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/)
-  - My go-to source when I forget what it is specifically I'm trying to accomplish.  It's really useful in that it has a section for each property and interactive example where you can select a property value and see how it affects the container and it's children.
+  - My go-to source when I forget what it is specifically I'm trying to accomplish.  It has a section for each property with interactive examples.
+- [What The Flexbox?!](https://flexbox.io/)
+  - Another great resource thanks to [@laurpaik](https://github.com/laurpaik). A code-along style lesson with examples files you can fork and clone on GitHub.
