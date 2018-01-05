@@ -28,7 +28,7 @@ Hello fellow coders!  I'm so excited to be making my first contribution to today
 
 Ok! So FlexBox!
 
-Flexbox or "Flexible Box" is a relatively new set of CSS properties we can utilize to distribute space among elements and align content exactly how we want.  It's never been easier to set up grids and organize content, I assure you once you get the swing of Flexbox you will never bother with float or any other grid system again.
+Flexbox or "Flexible Box" is a relatively new set of CSS properties we can utilize to distribute space among elements and align content exactly how we want.  It's never been easier to set up grids and organize content. I assure you once you get the swing of Flexbox you will never bother with `float` or any other grid system again.
 
 A brief intro from the [MDN Page on Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 
@@ -51,7 +51,7 @@ FlexBox is super simple to pick up but takes some time to master.  If you alread
     display: flex;
   }
   ```
-  ![alt text](https://i.imgur.com/y3mfDG3.png "display: flex;")
+  ![](https://i.imgur.com/ByxCOyr.gif)
 ### Display: inline-flex;
   #### CSS
   ```css
@@ -59,7 +59,7 @@ FlexBox is super simple to pick up but takes some time to master.  If you alread
     display: inline-flex;
   }
   ```
-  ![alt text](https://i.imgur.com/NtlTQyC.png "display: inline-flex;")
+  ![](https://i.imgur.com/4VXBCwr.gif)
 
   These display properties create flex containers which make a "flex formatting context" for its content.  Similar to making a block formatting context but the flex layout is the replacement with flexbox's built-in ability to adjust automatically.
 
