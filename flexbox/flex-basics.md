@@ -43,7 +43,8 @@ A brief intro from the [MDN Page on Using CSS Flexible Boxes](https://developer.
 FlexBox is super simple to pick up but takes some time to master.  If you already have a solid foundation with CSS all that's really new is:
 
 ### Two New Values:
-![alt text](https://i.imgur.com/QPMSjo9.png "Example Legend")
+#### Legend For Examples
+![alt text](https://i.imgur.com/EgLruwA.png "Example Legend")
 ### Display: flex;
   #### CSS
   ```css
@@ -122,7 +123,7 @@ Will align children elements if the parent container in a row.
   flex-direction: row;
 }
 ```
-![alt text](https://i.imgur.com/RJD0vq0.png "flex-direction: row;")
+![alt text](https://i.imgur.com/Id2aWVm.png "flex-direction: row;")
 
 #### Row-Reverse
 
@@ -134,7 +135,7 @@ Functions the same as row with the exception of ordering the child elements in r
   flex-direction: row-reverse;
 }
 ```
-![alt text](https://i.imgur.com/EQQzS4d.png "flex-direction: row-reverse;")
+![alt text](https://i.imgur.com/3K7FHZd.png?1 "flex-direction: row-reverse;")
 
 #### Column
 
@@ -146,7 +147,7 @@ Will align children elements if the parent container in a column.
   flex-direction: column;
 }
 ```
-![alt text](https://i.imgur.com/8mUkA4R.png "flex-direction: column;")
+![alt text](https://i.imgur.com/9Jh5LG5.png "flex-direction: column;")
 
 #### Column-Reverse
 
@@ -158,7 +159,7 @@ Functions the same as column with the exception of ordering the child elements i
   flex-direction: column-reverse;
 }
 ```
-![alt text](https://i.imgur.com/MwDhG1m.png "flex-direction: column-reverse;")
+![alt text](https://i.imgur.com/VYZSmup.png "flex-direction: column-reverse;")
 
 ## Alignment
 
@@ -179,7 +180,7 @@ Will justify the content among the beginning of the flex axis, so being a row we
   justify-content: flex-start;
 }
 ```
-![alt text](https://i.imgur.com/SbcPZye.png "justify-content: flex-start;")
+![](https://i.imgur.com/bHk6V4Z.gif "justify-content: flex-start;")
 
 #### Flex-End
 
@@ -192,7 +193,7 @@ I'm sure you're noticing some patterns by now.  Much like flex-start, flex-end w
   justify-content: flex-end;
 }
 ```
-![alt text](https://i.imgur.com/lJX7RpO.png "justify-content: flex-end;")
+![alt text](https://i.imgur.com/1GnZaX5.gif "justify-content: flex-end;")
 
 #### Center
 
@@ -205,7 +206,7 @@ Justify-Content: center; much like the rest of flexbox attribute values works ex
   justify-content: center;
 }
 ```
-![alt text](https://i.imgur.com/4039Flq.png "justify-content: center;")
+![alt text](https://i.imgur.com/XSipjl5.gif "justify-content: center;")
 
 #### Space Between
 
@@ -218,7 +219,7 @@ Space between will adjust the content evenly between each child elements. Bear i
   justify-content: space-between;
 }
 ```
-![alt text](https://i.imgur.com/c6XdOql.png "justify-content: space-between;")
+![alt text](https://i.imgur.com/o95SdGZ.gif "justify-content: space-between;")
 
 #### Space Around
 
@@ -231,7 +232,7 @@ Space around will adjust the content of the children elements automatically base
   justify-content: space-around;
 }
 ```
-![alt text](https://i.imgur.com/Gzc2uEn.png "justify-content: space-around;")
+![alt text](https://i.imgur.com/LXPh4Qe.gif "justify-content: space-around;")
 
 ## Sources and External Resources
 
